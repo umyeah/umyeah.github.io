@@ -47,7 +47,13 @@ const { pageTitle= "UmYeah's Dev" } = Astro.props
 		width: 720px;
 		max-width: calc(100% - 2em);
 		margin: auto;
-		padding: 3em 1em;
+		padding: 3em 1em 1em;
 		text-align: center;
+	}
+
+	@media (max-width: 720px) {
+		main {
+			padding: 1em 0;
+		}
 	}
 </style>
