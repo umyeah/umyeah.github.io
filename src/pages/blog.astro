@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import Layout from '../layouts/Layout.astro';
+import Blogpost from "../components/Blogpost.astro";
+
+const allPosts = await getCollection("blog");
+---
+
+<Layout pageTitle="UmYeah's Blog">
+    <section id="about">
+        {
+            allPosts.map((post: any) =>
+                <Blogpost url={`/posts/${post.id}/`} title={post.data.title} />
+            )
+        }
+    </section>
+</Layout>

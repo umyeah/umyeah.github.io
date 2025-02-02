@@ -1,0 +1,58 @@
+---
+import NavigationLink from "./NavigationLink.astro"
+---
+<header>
+    <nav>
+        <section class="left">
+            <h2><a href="/">UmYeah.dev</a></h2>
+        </section>
+
+        <section>
+            <NavigationLink href="/blog">Blog</NavigationLink>
+        </section>
+    </nav>
+</header>
+
+<style>
+    header {
+        margin: 0;
+        padding: 0 1em;
+        background: white;
+        box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    }
+    h2 {
+        margin: 0;
+        font-size: 1em;
+        display: inline-block;
+    }
+    section.left {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav a {
+        padding: 0.5em;
+        color: var(--black);
+        border-bottom: 4px solid transparent;
+        text-decoration: none;
+        display: inline-block;
+    }
+    nav a:hover {
+        color: rgb(var(--gray));
+    }
+    nav a.active {
+        border-bottom-color: var(--accent);
+    }
+
+    html.dark nav a {
+        color: #fff;
+    }
+    html.dark nav a.active{
+        border-bottom-color: #bbb;
+    }
+</style>
