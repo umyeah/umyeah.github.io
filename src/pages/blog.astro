@@ -8,6 +8,7 @@ const allPosts = await getCollection("blog");
 
 <Layout pageTitle="UmYeah's Blog">
     <section id="about">
+        <h3>Recent Posts</h3>
         {
             allPosts.map((post: any) =>
                 <Blogpost url={`/posts/${post.id}/`} title={post.data.title} />

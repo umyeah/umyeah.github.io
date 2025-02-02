@@ -4,10 +4,20 @@ import Layout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
 
+<base target="_blank" />
+
 <Layout>
     <h1>{frontmatter.title}</h1>
-    <p>{frontmatter.description}</p>
-    <p>Published on: {frontmatter.pubDate.toLocaleDateString()}</p>
+    <strong>{frontmatter.description}</strong>
+    <p style="font-size: 16px;">Published on: {frontmatter.pubDate.toLocaleDateString()}</p>
     <hr />
-    <slot />
+    <section>
+        <slot />
+    </section>
 </Layout>
+
+<style>
+    section {
+        text-align: left;
+    }
+</style>

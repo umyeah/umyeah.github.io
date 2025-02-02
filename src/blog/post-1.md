@@ -8,9 +8,7 @@ image:
 tags: ["astro", "blogging"]
 ---
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
+Welcome to my _new blog!_ Here, I will share my learning journey as I build a new website.
 
 **I made a post!**
 
