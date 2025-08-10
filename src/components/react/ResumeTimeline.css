@@ -27,6 +27,12 @@
 .resume-timeline__container {
   position: relative;
   padding-left: 0;
+  overflow: visible;
+}
+
+/* Allow for slide-in animations from outside the viewport */
+.timeline-item {
+  overflow: visible;
 }
 
 /* Timeline Item Layout */
@@ -314,6 +320,56 @@
   .content-card:hover {
     transform: none;
   }
+  
+  /* Disable all Framer Motion animations for users who prefer reduced motion */
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Enhanced Animation Support */
+.timeline-item {
+  /* Improve performance during animations */
+  will-change: transform, opacity;
+}
+
+.company-avatar {
+  /* Add subtle glow effect on hover for enhanced visual feedback */
+  transition: box-shadow 0.3s ease;
+}
+
+.company-avatar:hover {
+  box-shadow: 0 2px 12px rgba(var(--accent-rgb), 0.4),
+              0 4px 20px rgba(var(--accent-rgb), 0.2);
+}
+
+/* Smooth transforms for better animation performance */
+.content-card,
+.company-avatar,
+.timeline-line {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Enhanced hover states that work with Framer Motion */
+.content-card {
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.content-card:hover {
+  /* Enhanced shadow for better depth perception */
+  box-shadow: 0 6px 20px rgba(var(--gray), 0.25), 
+              0 12px 40px rgba(var(--gray), 0.15),
+              0 0 0 1px rgba(var(--accent-rgb), 0.1);
+}
+
+/* Enhanced hover effect styling - backdrop removed for better readability */
+.timeline-item:hover .content-card {
+  position: relative;
+  z-index: 1000;
 }
 
 /* Focus States for Accessibility */
