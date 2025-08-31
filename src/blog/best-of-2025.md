@@ -13,6 +13,8 @@ tags: ["music", "movies", "best_of", "blog"]
 - Tunde Adebimpe - God Knows [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/album/0MuAR8zcmZyGAwJcnkCpV1?si=AZ8lW8qdT1OQ1MJshocZcg)
 - Samia - Bloodless [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/album/37mwvUCrctINwVYeayXa7h?si=PumRHAYDTR6RB38msjkFtA)
 - The Beths - Straight Line Was A Lie [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/album/5XbVk30ifqaiI6EiVVjA1p?si=5Re8NOdPQQuCf_0fITBXLw)
+- caroline - caroline 2 [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/album/1CmdanwOGnV5QevtJQL6bN?si=IyFHAQw_QH6uTcyM3IxINQ
+)
 
 #### Songs
 
