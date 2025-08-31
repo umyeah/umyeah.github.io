@@ -14,7 +14,8 @@ tags: ["music", "movies", "best_of", "blog"]
 - King Gizzard & The Lizard Wizard - Flight b741 [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/album/1hyEbrjx4XtesBvKDR3ez2)
 - Bill Ryder-Jones - Iechyd Da [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/album/6ucqrUvJaIMZTdPnvW4fxQ)
 - Friko - Where We've Been, Where We Go from Here [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/track/24TyIHRNtcNihfFoWKkqzP)
-- Bon Iver - Sable [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/album/2Cwxsws0uZcu61gliYLOEm?autoplay=true)
+- Bon Iver - Sable [<i class="fa-brands fa-spotify"></i>](https://open.spotify.com/album/2Cwxsws0uZcu61gliYLOEm)
+- Cindy Lee - Diamond Jubilee (*Late Addition*) [<i class="fa-brands fa-youtube"></i>](https://www.youtube.com/watch?v=_LJi5na897Y)
 
 #### Songs
 
@@ -39,3 +40,4 @@ tags: ["music", "movies", "best_of", "blog"]
 - Memoir of a Snail [<i class="fa-brands fa-imdb"></i>](https://www.imdb.com/title/tt23770030)
 - Flow [<i class="fa-brands fa-imdb"></i>](https://www.imdb.com/title/tt4772188)
 - How to Make Millions Before Grandma Dies [<i class="fa-brands fa-imdb"></i>](https://www.imdb.com/title/tt31392609)
+- Look Back (*Late Addition*) [<i class="fa-brands fa-imdb"></i>](https://www.imdb.com/title/tt31711040/)
