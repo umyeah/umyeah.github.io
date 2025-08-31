@@ -1,6 +1,7 @@
 ---
 title: "Best of 2024"
 pubDate: 2025-02-02
+updatedDate: 2025-08-31
 description: "My favorites songs, albums, movies of 2024!"
 tags: ["music", "movies", "best_of", "blog"]
 ---

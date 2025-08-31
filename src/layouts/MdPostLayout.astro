@@ -9,7 +9,12 @@ const { frontmatter } = Astro.props;
 <Layout pageTitle={`UmYeah's Blog - ${frontmatter.title}`}>
     <h2>{frontmatter.title}</h2>
     <strong>{frontmatter.description}</strong>
-    <p style="font-size: 16px;">Published on: {frontmatter.pubDate.toLocaleDateString()}</p>
+    <p style="font-size: 16px;">
+        Published on: {frontmatter.pubDate.toLocaleDateString()}
+        {frontmatter.updatedDate && (
+            <span> • Last updated: {frontmatter.updatedDate.toLocaleDateString()}</span>
+        )}
+    </p>
     <hr />
     <section>
         <slot />
