@@ -1,0 +1,22 @@
+---
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<base target="_blank" />
+
+<Layout pageTitle="UmYeah's /now">
+    <h2>/now</h2>
+    <p style="font-size: 16px;">Last updated: {frontmatter.updatedDate.toLocaleDateString()}</p>
+    <hr />
+    <section>
+        <slot />
+    </section>
+</Layout>
+
+<style>
+    section {
+        text-align: left;
+    }
+</style>

@@ -1,0 +1,13 @@
+---
+import { getEntry, render } from 'astro:content';
+import NowLayout from '../layouts/NowLayout.astro';
+
+const entry = await getEntry('now', 'index');
+if (!entry) throw new Error('Now page not found');
+
+const { Content } = await render(entry);
+---
+
+<NowLayout frontmatter={entry.data}>
+    <Content />
+</NowLayout>
