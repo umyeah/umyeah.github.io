@@ -6,16 +6,16 @@ const today = new Date();
     <div class="content">
         &copy; {today.getFullYear()} - UmYeah.dev
         <span class="social-links">
-            <a href="https://github.com/umyeah" target="_blank">
+            <a href="https://github.com/umyeah" target="_blank" onclick="window.umami?.track('github-click')">
             <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/corey-sherman-aa12a611/" target="_blank">
+            <a href="https://www.linkedin.com/in/corey-sherman-aa12a611/" target="_blank" onclick="window.umami?.track('linkedin-click')">
             <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://last.fm/user/djumyeah" target="_blank">
+            <a href="https://last.fm/user/djumyeah" target="_blank" onclick="window.umami?.track('lastfm-click')">
             <i class="fa-brands fa-lastfm"></i>
             </a>
-            <a href="https://letterboxd.com/UmYeah/" target="_blank">
+            <a href="https://letterboxd.com/UmYeah/" target="_blank" onclick="window.umami?.track('letterboxd-click')">
             <i class="fa-brands fa-letterboxd"></i>
             </a>
         </span>
