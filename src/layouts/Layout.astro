@@ -29,6 +29,29 @@ const { pageTitle= "UmYeah's Dev" } = Astro.props
 			<slot />
 		</main>
 		<Footer />
+		<script is:inline>
+			(() => {
+				const eventName = 'external-link-click';
+				
+				function getSource(link) {
+					if (link.closest('footer')) return 'footer';
+					if (link.closest('nav')) return 'navigation';
+					if (link.closest('section') || link.closest('article')) return 'blog-content';
+					return 'page';
+				}
+				
+				document.querySelectorAll('a').forEach(a => {
+					if (a.host !== window.location.host && !a.getAttribute('data-umami-event')) {
+						const source = getSource(a);
+						const destination = a.hostname;
+						
+						a.setAttribute('data-umami-event', eventName);
+						a.setAttribute('data-umami-event-source', source);
+						a.setAttribute('data-umami-event-destination', destination);
+					}
+				});
+			})();
+		</script>
 	</body>
 </html>
 
