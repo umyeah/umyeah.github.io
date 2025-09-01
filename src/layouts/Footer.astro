@@ -3,30 +3,38 @@ const today = new Date();
 ---
 
 <footer>
-    &copy; {today.getFullYear()} - UmYeah.dev
-    <span class="social-links">
-        <a href="https://github.com/umyeah" target="_blank">
-           <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/corey-sherman-aa12a611/" target="_blank">
-           <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://last.fm/user/djumyeah" target="_blank">
-           <i class="fa-brands fa-lastfm"></i>
-        </a>
-        <a href="https://letterboxd.com/UmYeah/" target="_blank">
-           <i class="fa-brands fa-letterboxd"></i>
-        </a>
-    </span>
+    <div class="content">
+        &copy; {today.getFullYear()} - UmYeah.dev
+        <span class="social-links">
+            <a href="https://github.com/umyeah" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/corey-sherman-aa12a611/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://last.fm/user/djumyeah" target="_blank">
+            <i class="fa-brands fa-lastfm"></i>
+            </a>
+            <a href="https://letterboxd.com/UmYeah/" target="_blank">
+            <i class="fa-brands fa-letterboxd"></i>
+            </a>
+        </span>
+    </div>
 </footer>
 <style>
     footer {
+        display: flex;
+        justify-content: center;
         padding: 2em 1em;
         background: linear-gradient(var(--gray-gradient)) no-repeat;
         color: rgb(var(--gray-dark));
+    }
+
+    footer .content {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: var(--max-site-width);
     }
 
     .social-links a {
